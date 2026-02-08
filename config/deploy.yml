@@ -3,16 +3,17 @@ image: jpmagido/gabriel_attal
 
 servers:
   web:
-    - 143.110.167.230
+    - 161.35.47.117
 
 proxy:
   ssl: true
-  host: gabriel-attal.com
+  hosts:
+    - gabriel-attal.com
+    - www.gabriel-attal.com
   healthcheck:
     interval: 3
     path: /up
     timeout: 3
-
 
 registry:
   username: jpmagido 
